@@ -56,19 +56,21 @@ body {
 .pricing-button {
   text-decoration: none;
   background-color: #eeeeee;
-  color: #333333;
   padding: 0.6em 3em;
   cursor: pointer;
   border-radius: 10px;
   font-weight: 700;
   color: #489cfc;
   border: 1px solid #9dd1ff;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .is-featured {
   background-color: #489cfc;
   border: 1px solid #46465546;
   color: #f2efe9;
 }
+
 @media (min-width: 920px) {
   html {
     height: 100%;
@@ -183,10 +185,25 @@ body {
     color: #489cfc;
     border: 1px solid #9dd1ff;
   }
+  .pricing-button:hover {
+    background-color: #489cfc;
+    border: 1px solid #46465546;
+    color: #f2efe9;
+  }
+
+  .pricing-button:active {
+    position: relative;
+    top: 3px;
+  }
 
   .is-featured {
     background-color: #489cfc;
     border: 1px solid #46465546;
     color: #f2efe9;
+  }
+  .is-featured:hover {
+    color: #489cfc;
+    background-color: #eeeeee;
+    border: 1px solid #9dd1ff;
   }
 }
