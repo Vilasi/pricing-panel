@@ -1,0 +1,127 @@
+html {
+  height: 100%;
+}
+
+/* #016FF9 BOLD AND DESCRIPTOR TEXT FONT COLOR */
+/* color: #888; GREY FONT COLOR (Personal, Small Team, Enterprise)*/
+/* border: 1px solid #9dd1ff; BUTTON BORDER */
+/* border-top: 1px solid #e1f1ff; LI BORDER */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  align-items: center;
+  height: 100%;
+  min-height: 90vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #60a9ff;
+}
+
+/* The Card Container */
+.panel {
+  /* margin-top: ; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* flex-basis: 60%; */
+  background: #f2efe9;
+  /* width: 80%;
+  height: 62%; */
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px 0px rgba(64, 78, 77, 0.75);
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(64, 78, 77, 0.75);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(64, 78, 77, 0.75);
+}
+
+/* The individual Cards */
+.pricing-plan {
+  flex-basis: fit-content;
+  /* This margin and padding is for each card */
+  padding: 2vw 0 2vw 0;
+  margin: 2rem 0 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.pricing-plan:nth-of-type(1) {
+  flex-basis: calc(100% / 3);
+  flex-shrink: 1;
+  border-right: 1px solid #9dd1ff;
+}
+.pricing-plan:nth-of-type(2) {
+  flex-basis: calc(100% / 3);
+  border-left: 1px solid #9dd1ff;
+  border-right: 1px solid #9dd1ff;
+  flex-shrink: 1;
+}
+.pricing-plan:nth-of-type(3) {
+  flex-basis: calc(100% / 3);
+  flex-shrink: 1;
+}
+
+.pricing-img {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  color: #888;
+  /* padding-bottom: 1rem; */
+}
+
+/* ul in the card */
+.pricing-features {
+  max-width: 70%;
+  padding: 0;
+}
+
+.pricing-features-item {
+  list-style: none;
+  padding: 1rem;
+  border-top: 1px solid #9dd1ff;
+  border-bottom: 1px solid #9dd1ff;
+  font-weight: 700;
+  color: #3185fc;
+}
+
+.pricing-features-item:nth-of-type(2) {
+  border-top: none;
+}
+
+.pricing-price {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #016ff9;
+}
+
+.pricing-button {
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 0.6em 3em;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #489cfc;
+  border: 1px solid #9dd1ff;
+}
+
+.is-featured {
+  background-color: #489cfc;
+  border: 1px solid #46465546;
+  color: #f2efe9;
+}
