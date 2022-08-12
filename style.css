@@ -186,9 +186,9 @@ body {
     transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .pricing-button:hover {
-    background-color: #489cfc;
+    background-color: #e1f1ff;
     border: 1px solid #46465546;
-    color: #f2efe9;
+    /* color: #f2efe9; */
   }
 
   .pricing-button:active {
